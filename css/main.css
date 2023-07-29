@@ -1,0 +1,260 @@
+:root {
+    --color-primary: #2D5C52;
+    --color-secondary: #5A3D32;
+    --color-tertiary: #73BAAC;
+    --color-text: #212121;
+    --color-accent: #BBBBBB;
+    --color-background: #FAF5EF;
+    --color-white: #FEFEFE;
+    --color-error: #e5f761;
+  }
+  
+ 
+  body {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  body, p, button {
+    font-family: 'Nunito';
+  }
+  
+  h1 {
+    font-family: 'Berlin Sans FB Demi', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 6px;
+  }
+  
+  h2 {
+    font-family: 'Berlin Sans FB Demi', sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    padding-bottom: 6px;
+  }
+  
+  h3 {
+    font-family: 'Berlin Sans FB Demi', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 6px;
+  }
+  
+  h4 {
+    font-family: 'Berlin Sans FB Demi', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 6px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.3;
+    padding-bottom: 6px;
+  }
+  
+  button {
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button i {
+    font-size: 14px;
+    padding-left: 5px;
+  }
+  
+  .container {
+    padding: 1em;
+  }
+  
+  
+.skip-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .skip-links a{
+    position: absolute;
+    top: -3em;
+    background-color: black;
+    color:white;
+    padding: .5em 1em;
+    font-weight: bold;
+  }
+  .skip-links a:focus{
+    top: 0;
+  }
+   
+  header .container {
+    align-items: center;
+    background-color: var(--color-tertiary);
+    display: flex;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header .logo {
+    align-items: center;
+    display: flex;
+  }
+  
+  header .logo img {
+    height: 50px;
+    width: 50px;
+  }
+  
+  header .menu-mobile, header .search-mobile {
+    display: block;
+  }
+  
+  header .search-mobile button {
+    background: none;
+    border: none;
+  }
+  
+  header .search-mobile button i {
+    font-size: 18px;
+  }
+  
+  header .menu-mobile {
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 25px;
+  }
+  
+  header .container .menu, header .container .search {
+    display: none;
+  }
+  
+  header .banner {
+    align-items: flex-start;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+    padding: 0 16px;
+  }
+  
+  header .banner button {
+    background-color: var(--color-accent);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 5px 15px;
+  }
+    
+  header .banner button:hover {
+    background-color: var(--color-tertiary);
+  }
+  
+  header .banner p {
+    width: 50%;
+  }
+  
+  .search label p {
+    display: none;
+  }
+  
+  
+
+  footer {
+    background-color: var(--color-accent);
+    bottom: 0;
+    text-align: center;
+  }
+  
+  footer p, footer a {
+    margin-bottom: 0;
+    margin-top: 0.5em;
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: var(--color-text);
+  }
+  
+  footer .copyright {
+    font-size: 0.8rem;
+  }
+  
+  
+
+  main .container {
+    background-color: var(--color-background);
+  }
+  
+  main .content-title {
+    display: none;
+  }
+  
+  section {
+    margin: 10px 0;
+  }
+  
+  .legend {
+    cursor: pointer;
+  }
+  
+  .legend {
+    color: var(--color-secondary);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6px;
+  }
+  
+  .legend p {
+    text-decoration: underline;
+  }
+  
+  section .more-link {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: end;
+    text-decoration: underline;
+    margin: 16px 0;
+  }
+  
+  section a, section a:active {
+    color: var(--color-primary);
+  }
+  
+  section a:hover {
+    color: var(--color-text);
+  }
+  
+  section a i {
+    padding-left: 10px;
+  }
+  
+  .square-img img {
+    border: 1px solid var(--color-accent);
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+  }
+  
+  .rounded-img img {
+    border: 1px solid var(--color-accent);
+    border-radius: 80%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+  }
+  
+  .rectangle-img img {
+    border: 1px solid var(--color-accent);
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+  }
+  
+  .square-img img:hover,
+  .rounded-img img:hover,
+  .rectangle-img img:hover {
+    opacity: 0.6;
+  }

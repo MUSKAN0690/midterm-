@@ -1,0 +1,29 @@
+/* DEFAULT STYLES */
+
+section {
+    border-bottom: 1px solid var(--color-accent);
+  }
+  
+  section .flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  
+  section .flex-container div {
+    margin-right: 16px;
+  }
+  
+  section:last-child {
+    border: none;
+  }
+  
+  
+  /* DESKTOP STYLES: above 1200px */
+  @media screen and (min-width: 1200px) {
+    
+    section .flex-container {
+      justify-content: space-around;
+    }
+  
+  }
